@@ -1,5 +1,7 @@
 #title {
-    color: blue;
+    color: white;
+    position: relative;
+    z-index: 1;
 }
 
 #background {
@@ -7,4 +9,85 @@
     width: 100%;
     position: absolute;
     opacity: 20%;
+    z-index: 0;
+}
+
+#black-background {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+}
+
+.nav-bar {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    column-gap: 50px;
+    z-index: 1;
+}
+
+h1 {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    margin: auto;
+    font-size: 3em;
+}
+
+.yogrev {
+    position: relative;
+    color: whitesmoke;
+    font-size: 1.5em;
+}
+
+.title-container {
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+}
+
+.text-container {
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    margin: 0 20px 0 20px;
+}
+
+button {
+  background-color: whitesmoke;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin: 20px 10px 0px 10px;
+}
+
+button:hover {
+  background-color: #fff;
+}
+
+button:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  button {
+    min-width: 120px;
+    padding: 0 25px;
+  }
 }
