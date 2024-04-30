@@ -1,5 +1,6 @@
 #title {
     position: relative;
+    top: 20px;
     z-index: 1;
     margin-top: 30px;
     background-color: black;
@@ -49,7 +50,7 @@ h1 {
     font-size: 1.5em;
     background-color: white;
     border: 2px solid pink;
-    height: 400px;
+    height: 200px;
     padding: 20px;
     margin-top: 20px;
     z-index: 1;
@@ -64,14 +65,14 @@ h1 {
 }
 
 .text-container {
-    height: 500px;
+    height: 300px;
     max-width: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     border: 1px solid white;
-    margin: 0 auto;
+    margin: 40px auto 40px auto;
     background: white;
     z-index: 2;
 }
