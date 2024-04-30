@@ -1,6 +1,8 @@
 import "./style.css";
 import Background from "./images/yogbackground.png";
 import { openMenu } from "./openMenu.js";
+import { openContact } from "./openMenu.js";
+import { openHome } from "./openMenu.js";
 
 const body = document.querySelector("body");
 
@@ -18,7 +20,7 @@ titleContainer.setAttribute("class", "title-container");
 
 const title = document.createElement("h1");
 title.setAttribute("id", "title");
-title.innerHTML = "Mo's Yoghurt";
+title.innerHTML = "YOGZ";
 titleContainer.appendChild(title);
 body.appendChild(titleContainer);
 
@@ -40,4 +42,10 @@ textContainer.appendChild(yogRev);
 body.appendChild(textContainer);
 
 const menuBtn = document.querySelector("#menu");
-menuBtn.addEventListener("click", openMenu());
+menuBtn.addEventListener("click", openMenu);
+
+const homeBtn = document.querySelector("#home");
+homeBtn.addEventListener("click", openHome);
+
+const contactBtn = document.querySelector("#contact");
+contactBtn.addEventListener("click", openContact);
