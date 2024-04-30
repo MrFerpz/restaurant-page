@@ -1,31 +1,41 @@
 #title {
-    color: white;
     position: relative;
     z-index: 1;
+    margin-top: 30px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    box-shadow: 10px -8px teal;
+    border: 2px solid pink;
 }
 
 #background {
     height: 100%;
     width: 100%;
     position: absolute;
-    opacity: 20%;
-    z-index: 0;
-}
-
-#black-background {
-    height: 100%;
-    width: 100%;
-    position: absolute;
+    opacity: 0.2;
+    background-color: black;
     z-index: 0;
 }
 
 .nav-bar {
     position: relative;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     justify-items: center;
-    column-gap: 50px;
     z-index: 1;
+}
+
+#home {
+  grid-column: 2/3;
+}
+
+#menu {
+  grid-column: 3/4;
+}
+
+#contact {
+  grid-column: 4/5;
 }
 
 h1 {
@@ -37,23 +47,28 @@ h1 {
 
 .yogrev {
     position: relative;
-    color: whitesmoke;
     font-size: 1.5em;
 }
 
 .title-container {
-    height: 40vh;
+    height: 80px;
+    max-width: 400px;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
 }
 
 .text-container {
-    height: 30vh;
+    height: 500px;
+    max-width: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     border: 1px solid white;
-    margin: 0 20px 0 20px;
+    margin: 0 auto;
+    background: white;
+    z-index: 2;
 }
 
 button {

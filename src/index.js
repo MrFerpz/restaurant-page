@@ -1,6 +1,6 @@
 import "./style.css";
 import Background from "./images/yogbackground.png";
-import Black from "./images/black.png";
+import { openMenu } from "./openMenu.js";
 
 const body = document.querySelector("body");
 
@@ -22,11 +22,6 @@ title.innerHTML = "Mo's Yoghurt";
 titleContainer.appendChild(title);
 body.appendChild(titleContainer);
 
-const blackImage = new Image();
-blackImage.src = Black;
-blackImage.setAttribute("id", "black-background")
-backgroundContainer.appendChild(blackImage);
-
 const myBackground = new Image();
 myBackground.src = Background;
 myBackground.setAttribute("id", "background");
@@ -44,3 +39,5 @@ textContainer.appendChild(yogRev);
 
 body.appendChild(textContainer);
 
+const menuBtn = document.querySelector("#menu");
+menuBtn.addEventListener("click", openMenu());
